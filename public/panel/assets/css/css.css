@@ -1,0 +1,93 @@
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    height: 36px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+
+.select2-container--open .select2-dropdown--below{
+   min-width: 250px !important;
+}
+.select2-results__option{
+    font-size: 14px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #eb621c;
+    color: white;
+}
+
+
+.select2-dropdown,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #e5e7eb !important;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field{
+    resize: none;
+}
+
+
+.select2-container--default .select2-results__option--selected,
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #eb621c;
+    color: white;
+}
+
+/* .select2-container .select2-search--inline {
+    float: none;
+} */
+
+
+
+
+.handle {
+	cursor: grab;
+} 
+
+.grid-square {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background-color: #fff;
+	border: solid 1px rgb(0,0,0,0.2);
+	padding: 10px;
+	margin: 12px;
+}
+
+.nested-sortable, .nested-1, .nested-2, .nested-3 {
+	margin-top: 5px;
+}
+
+.nested-1 {
+	background-color: #e6e6e6
+}
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}

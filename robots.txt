@@ -1,0 +1,32 @@
+# General settings for all user agents (bots)
+User-agent: *
+Disallow: /xadmin/
+Disallow: /api/
+Disallow: /*.php$
+Disallow: /cgi-bin/
+Disallow: /tr/*.php
+Disallow: /tr/cgi-bin/
+Disallow: /en/*.php
+Disallow: /en/cgi-bin/
+
+# Block access to the admin and certain sensitive directories
+Disallow: /xadmin/
+
+
+# Allow all other pages to be crawled
+Allow: /
+
+# Block specific bad bots or crawlers (Example: AhrefsBot)
+User-agent: AhrefsBot
+Disallow: /
+
+# Block search engines from indexing scripts or stylesheets
+Disallow: /public/css/
+Disallow: /public/js/
+Disallow: /public/fonts/
+
+# Do not allow access to sensitive directories or files
+Disallow: /app/
+
+# Sitemap for better indexing
+Sitemap: https://raqoonhotel.com/sitemap.xml

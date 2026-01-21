@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akar Digital Hakkında - Vizyonumuz, misyonumuz ve deneyimli ekibimizle tanışın.">
+    <title>Neden Biz - Akar Digital</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css?v=14">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo with Cinematic Animation -->
+                <a href="index.html" class="logo logo-cinematic">
+                    <img src="assets/images/logo.png" alt="Akar Digital Logo" width="32" height="32"
+                        style="border-radius: 50%; object-fit: cover;">
+                    <span>AKAR DIGITAL</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">Ana Sayfa</a></li>
+                    <li><a href="services.html" class="nav-link" data-i18n="nav.services">Hizmetler</a></li>
+                    <li><a href="about.html" class="nav-link active" data-i18n="nav.about">Neden Biz</a></li>
+                    <li><a href="team.html" class="nav-link" data-i18n="nav.team">Ekibimiz</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">İletişim</a></li>
+                </ul>
+
+                <!-- Nav Actions -->
+                <div class="nav-actions">
+                    <!-- Language Toggle -->
+                    <button class="icon-btn" data-lang="tr" onclick="changeLanguage('tr')" title="Türkçe">TR</button>
+                    <button class="icon-btn" data-lang="en" onclick="changeLanguage('en')" title="English">EN</button>
+
+                    <!-- Dark Mode Toggle -->
+                    <button class="icon-btn" id="darkModeToggle" onclick="toggleDarkMode()" title="Tema Değiştir">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-btn" onclick="closeMobileMenu()"
+            style="position: absolute; top: 20px; right: 20px; font-size: 32px;">×</button>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link" data-i18n="nav.home" onclick="closeMobileMenu()">Ana Sayfa</a>
+            </li>
+            <li><a href="services.html" class="nav-link" data-i18n="nav.services"
+                    onclick="closeMobileMenu()">Hizmetler</a></li>
+            </li>
+            <li><a href="about.html" class="nav-link" data-i18n="nav.about" onclick="closeMobileMenu()">Neden Biz</a>
+            <li><a href="team.html" class="nav-link" data-i18n="nav.team">Ekibimiz</a></li>
+            </li>
+            <li><a href="contact.html" class="nav-link" data-i18n="nav.contact" onclick="closeMobileMenu()">İletişim</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 6rem 0;">
+        <div class="container text-center">
+
+            <h1 class="hero-title" style="margin-bottom: 1rem;">
+                <span data-i18n="about.title">Biz Kimiz?</span>
+            </h1>
+            <p class="hero-description" style="max-width: 700px; margin: 0 auto;" data-i18n="about.description">
+                Dijital dönüşüm yolculuğunuzda size rehberlik eden tutkulu bir ekibiz.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Us Section (Moved from Home) -->
+    <section class="section" style="background-color: var(--bg-tertiary);">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+
+                <h2 class="section-title" data-i18n="home.why_us_title">Sizi Bir Adım Öne Taşıyoruz</h2>
+            </div>
+
+            <div class="grid grid-cols-3 whyus">
+                <!-- Card 1 - Yüksek Performans -->
+                <div class="card scroll-animate">
+                    <div class="card-icon">
+                        <div style="font-size: 32px;">⚡</div>
+                    </div>
+                    <h3 class="card-title" data-i18n="home.why_us_1_title">Yüksek Performans</h3>
+                    <p class="card-description" data-i18n="home.why_us_1_desc">Sadece çalışan değil, uçan sistemler
+                        yapıyoruz. Hız, SEO ve kullanıcı deneyimi için kritik.</p>
+                </div>
+
+                <!-- Card 2 - Güven & Süreklilik -->
+                <div class="card scroll-animate">
+                    <div class="card-icon">
+                        <div style="font-size: 32px;">🛡️</div>
+                    </div>
+                    <h3 class="card-title" data-i18n="home.why_us_2_title">Güvenlik & Stabilite</h3>
+                    <p class="card-description" data-i18n="home.why_us_2_desc">Proje leriniz en güncel güvenlik
+                        standartlarıyla korunur, kesintisiz hizmet sunar.</p>
+                </div>
+
+                <!-- Card 3 - Kullanıcı Odaklı -->
+                <div class="card scroll-animate">
+                    <div class="card-icon">
+                        <div style="font-size: 32px;">🎯</div>
+                    </div>
+                    <h3 class="card-title" data-i18n="home.why_us_3_title">Kullanıcı Odaklı</h3>
+                    <p class="card-description" data-i18n="home.why_us_3_desc">Tasarım kararlarımızı veriye ve kullanıcı
+                        davranışlarına dayalı olarak alıyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="cta-section">
+                <div
+                    style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; background: white; opacity: 0.1; border-radius: 50%; margin-top: -80px; margin-right: -80px; filter: blur(100px);">
+                </div>
+                <div
+                    style="position: absolute; bottom: 0; left: 0; width: 300px; height: 300px; background: rgba(147, 51, 234, 0.5); opacity: 0.2; border-radius: 50%; margin-bottom: -80px; margin-left: -80px; filter: blur(80px);">
+                </div>
+
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2 data-i18n="home.cta_title">Projenizi Hayata Geçirmeye Hazır mısınız?</h2>
+                        <p data-i18n="home.cta_desc">Hayalinizdeki dijital ürünü tasarlamak ve geliştirmek için
+                            buradayız. Hemen tanışalım, markanızı büyütelim.</p>
+                    </div>
+                    <a href="contact.html" class="btn btn-large" style="flex-shrink: 0;">
+                        <span data-i18n="home.cta_button">Teklif İste</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AKAR DIGITAL</h3>
+                    <p data-i18n="footer.slogan">Dijital dünyada iz bırakın.</p>
+                    <div class="social-links" style="margin-top: 1rem;">
+                        <a href="https://instagram.com/akardigitall" target="_blank" class="social-icon instagram"
+                            title="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/905441527074" target="_blank" class="social-icon whatsapp"
+                            title="WhatsApp">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.quick_links">Hızlı Bağlantılar</h3>
+                    <a href="index.html" data-i18n="nav.home">Ana Sayfa</a><br>
+                    <a href="services.html" data-i18n="nav.services">Hizmetler</a><br>
+                    <a href="about.html" data-i18n="nav.about">Neden Biz</a><br>
+                    <a href="team.html" data-i18n="nav.team">Ekibimiz</a><br>
+                    <a href="contact.html" data-i18n="nav.contact">İletişim</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="footer.contact_info">İletişim</h3>
+                    <p>Email: info@akardijital.com</p>
+                    <p>Tel: +90 (544) 152 70 74</p>
+                    <p data-i18n="footer.address">İstanbul, Türkiye</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2021 Akar Digital. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/905441527074" target="_blank" class="whatsapp-sticky" title="WhatsApp ile İletişim">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script src="js/translations.js?v=14"></script>
+    <script src="js/main.js?v=14"></script>
+</body>
+
+</html>
