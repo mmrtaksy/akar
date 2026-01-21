@@ -1,0 +1,143 @@
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 768px) {
+
+
+
+    .mobile-menu .nav-menu {
+        display: block;
+    }
+
+    .nav-actions {
+        gap: 3px
+    }
+
+    /* Navigation */
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    /* Typography */
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .section-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-description {
+        font-size: var(--font-size-base);
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 4rem 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    /* Grid */
+    .grid-cols-2,
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    /* CTA Section */
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-text h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    /* Sections */
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    /* Cards */
+    .card {
+        padding: var(--spacing-md);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Mobile (< 480px) */
+@media (max-width: 480px) {
+    :root {
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --font-size-3xl: 1.5rem;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    .hero-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+/* Desktop Large (> 1280px) */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1536px;
+    }
+}
