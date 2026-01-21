@@ -11,6 +11,7 @@
             word-break: initial;
             word-spacing: normal;
             word-wrap: break-word;
+            position: relative;
         }
     </style>
 @endpush
